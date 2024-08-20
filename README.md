@@ -71,6 +71,8 @@ Redux, zustand có cơ chế presit không ( là cái lưu lại khi out khỏi 
 - Cài **yarn add @react native firrebase/app và firebase/mess**
 - Vào -> android -> app0> src -> build.gradie -> Chọn namespace
 - Cần có FCM Token rồi vào fcm token test gửi thông báo
+- Có FCM Token và backend sẽ config để gửi thông báo về cho minh.
+- Ví dụ màn hình chat: Sẽ nhúng deeplink và qua các stack cha mà mình đã cấu hình => màn chat. 
 Cấu hình firebase
 ## Câu4: lifecycle hoạt động ra sao
 - Các giai đoạn của lifecycle như sau:
@@ -78,6 +80,7 @@ Cấu hình firebase
   - Mounting: Gắn phần tử vào dom
   - Updateting: Cập nhật props, states thay đổi
   - Unmont: Gỡ khỏi Dom
+  - return trong useEffect nằm trong unmount
 ## Câu5: 
 - Nếu ko dùng react query thì có thể dùng gì gọi api(useEff)
 - Xử lý bất đồng bộ ntn
