@@ -324,3 +324,19 @@ array.slice(start, end)
 
 ### 17. Hàm splice
 Có thể xoá các phàn tử hoặc thêm phần tử khác
+
+# Phỏng vấn tạch ngày 26/08
+### Câu 1: Phân biệt let var const
+### Câu 2: Phân biệt undefined và null
+### Câu 3: Xử lý bất đông bộ
+### Câu 4: Hàm trong phần xử lý bất đồng bộ được gọi là hàm gì
+### Câu 5: Phân biệt MVC và MVVM
+### Câu 6: index trong postgree sql là gì
+### Câu 7: Postgre khác gì mongodb khác gì sql
+### Câu 8: having trong db là gì đi với cái gì và tác dụng làm gì
+### Câu 9: Bọc try catch ngoài promise và ngoài async nếu lỗi thì trả về gì
+- Bọc ngoài promisse thì ko trả về gì
+- Trong async thì trả về lỗi
+### Câu 10: Có mấy giai đoạn của promise
+### Câu 11: https là gì
+### Câu 12: Restful api là gì
