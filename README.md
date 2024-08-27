@@ -340,3 +340,15 @@ Có thể xoá các phàn tử hoặc thêm phần tử khác
 ### Câu 10: Có mấy giai đoạn của promise
 ### Câu 11: https là gì
 ### Câu 12: Restful api là gì
+
+### find new company cung ban dinh minh
+### Q1: responsive design principles in web development (media query , breakpoints) nếu trả lời oke thì hỏi về flex grid khác nhau giống nhau ưu nhược điểm 
+### Q2: What strategies do you use to debug code and identify errors in your work (phát hiện lỗi và debug nhờ công cụ gì ez vl)
+### Q3: What stategies do u use to manage the version of your work / project -> git , github,gitlab -> oke thì hỏi về mấy lệnh cơ bản hay dùng là gì ,vv
+### Q4: What is the difference between controlled and uncontrolled components
+### Q5:What is a state manager and which ones have you worked with or know? redux ,redux saga, redux toolkit 3 thành phần chính của redux 
+redux saga là middlewave ... dùng quản lý các effect trong redux đơn giản hơn , giúp viết async code gọn hơn
+redux toolkit -> thư viện giúp cấu hình redux store dễ dàng hơn
+### Q6:What is a reducer in Redux and what parameters does it take?
+### Q7: Asynchronous dùng Redux Thunk để xử lý như nào ? nếu không thì bình thường hay sử dụng gì để giải quyết asynchronous action ? sử dụng promise có vấn đề gì ưu nhược điểm..
+### 
