@@ -327,22 +327,59 @@ Có thể xoá các phàn tử hoặc thêm phần tử khác
 
 # Phỏng vấn tạch ngày 26/08
 ### Câu 1: Phân biệt let var const
+- vả có phạm vi hàm, tức là có thể truy cập bất cứ đâu còn let và const phạm vị khối.
+- var gây ra hiện tượng hosting tức là dùng trước khi khai báo trả về undefined
 ### Câu 2: Phân biệt undefined và null
+- null và undefined là hai giá trị trong js
+  - undefined là không xác định. Khi khai báo nhưng không gán giá trị cho nó hoặc truy cập biến không tồn tại
+  - null là biểu diễn một biến không có giá trị
+  - Cả hai đều kiểu dữ liệu object
 ### Câu 3: Xử lý bất đông bộ
+- Callback
+  - Đơn giản dễ hiểu
+  - Dễ sinh ra callback hell
+- Async
+  - Không có trạng thái
+- promise
+  - Pending: 
+  - Resolved: đã hoàn thành
+  - reject từ chối
+- Sự khác nhau giữa promise và async
+  - promise là nền tảng xử lý bất đồng bộ. Lâu đời hơn
+  - async thì dễ đọc, dễ hiểu hơn. Sử dụng trên cú pháp
 ### Câu 4: Hàm trong phần xử lý bất đồng bộ được gọi là hàm gì
 ### Câu 5: Phân biệt MVC và MVVM
+- Mô hình MVC
+  - Là mô hình model-view-controller
+  - Trong đó view là giao diện người dùng
+  - Controller là xử lý sự kiện logic và quyết định view nào hiển thị
+  - Model là thành phần quản lý  các cơ sở dữ liệu của ứng dụng
+- Mô hình MVVM (Modal, View, ViewModal)
+  - Modal tương tự như MVC
+  - View là nơi chứa tương tác và đưa ra yêu cầu
+  - ViewModal là nơi tương tự như controller
+  - Này là two way binding
+- Sự khác nhau chính giữa one way binding và two way binding
+  - 1 chiều và 2 chiều. Tức là ví dụ react thì 1 chiều data thay đổi => view đổi còn angular 2 chiều tương tự trong form view đổi => data đổi
 ### Câu 6: index trong postgree sql là gì
 ### Câu 7: Postgre khác gì mongodb khác gì sql
+- Với postgre và mongo thì lưu dữ liệu ở các bảng
+- Với monoDb thì lưu dữ liệu theo dạng JSON
+- MongoDB là dạng cơ sở dữ liệu không quan hệ. không tuân theo cấu trúc bảng hàng cột
 ### Câu 8: having trong db là gì đi với cái gì và tác dụng làm gì
+- Dùng lọc nhóm dữ liệu thường đi với group by và các hợp với các phần count sum max ...
 ### Câu 9: Bọc try catch ngoài promise và ngoài async nếu lỗi thì trả về gì
 - Bọc ngoài promisse thì ko trả về gì
 - Trong async thì trả về lỗi
 ### Câu 10: Có mấy giai đoạn của promise
 ### Câu 11: https là gì
 ### Câu 12: Restful api là gì
+- Là một kiến trúc APi sử dụng để giao tiếp với nhau thông qua giao thức http. Là các để trao đổi dữ liệu với nhau mà không cần biết chi tiết cách hoạt động  
+- PATCH và PUT: PUT thay thế toàn bộ dữlieuej
 
 ### find new company cung ban dinh minh
 ### Q1: responsive design principles in web development (media query , breakpoints) nếu trả lời oke thì hỏi về flex grid khác nhau giống nhau ưu nhược điểm 
+- Flex thì theo 1 chiều hàng hoặc cột còn grid theo cả 2 chiều hàng và cột
 ### Q2: What strategies do you use to debug code and identify errors in your work (phát hiện lỗi và debug nhờ công cụ gì ez vl)
 ### Q3: What stategies do u use to manage the version of your work / project -> git , github,gitlab -> oke thì hỏi về mấy lệnh cơ bản hay dùng là gì ,vv
 ### Q4: What is the difference between controlled and uncontrolled components
@@ -352,3 +389,39 @@ redux toolkit -> thư viện giúp cấu hình redux store dễ dàng hơn
 ### Q6:What is a reducer in Redux and what parameters does it take?
 ### Q7: Asynchronous dùng Redux Thunk để xử lý như nào ? nếu không thì bình thường hay sử dụng gì để giải quyết asynchronous action ? sử dụng promise có vấn đề gì ưu nhược điểm..
 ### 
+
+### 1. Xử lý việc load ảnh lâu
+-  Sử dụng lazy load hoặc CDN
+
+## CMC ATI
+### Các kỹ thuật tối ưu hiển thị trang web mà em đã biết và đã sử dụng
+- Sử dụng lazy load 
+- Tối ưu ảnh bằng kĩ thuật CDN
+- Sử dụng thumbnail
+- Cache
+
+### các ctdl gt mà em đã được học 
+- Mảng
+- Linklist
+- Hàng đợi
+- Ngăn xếp
+- Cây
+- Sắp xếp
+- Tìm kiếm
+
+### Các loại thuật toán sắp sếp thuật toán nào nhanh nhất
+- Quick Sort: Chọn giá trị privot. Sau đó chia 2 phần trái nhỏ hơn priot và phải lớn hơn. đệ quy sắp xếp lị cho từng phần tức là lại lặp lại quá trình trên
+- Sắp xếp chèn: 
+  - Giả sử chúng ta có danh sách số: [5, 2, 4, 6, 1, 3]
+  [5]: Phần tử đầu tiên trở thành danh sách đã sắp xếp.
+  [2, 5]: So sánh 2 với 5. Vì 2 nhỏ hơn 5, ta chèn 2 vào trước 5.
+  [2, 4, 5]: So sánh 4 với 5, rồi với 2. Chèn 4 vào giữa.
+  [2, 4, 5, 6]: 6 đã ở đúng vị trí.
+  [1, 2, 4, 5, 6]: So sánh 1 với 6, 5, 4, 2. Chèn 1 vào đầu danh sách.
+  [1, 2, 3, 4, 5, 6]: So sánh 3 với 5, 4, chèn 3 vào giữa 2 và 4.
+- Sắp xếp nổi bọt
+
+### hiểu biết của em về UI/UX ui ux là gì em đã từng tham gia việc  cắt giao diện chưa , bình thường em làm thì lấy giao diện qua design trên figma hay đâu, ...
+- UI là user interface: là giao diện người dùng những gì người dùng nhìn thấy như màu sắc, bố cục,..
+- UX là trải nghiệm của người dùng là sự tiện lợi, hiệu quả và nhất quán,..
+
